@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet"href="styles.css"/>
+        <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="weather-app">
+            <header>
+                <div>
+                    <h2> Welcome to our Weather application</h2>
+                </div>
+            </header>
+             
+            <main>
+              <div>
+                <form action=""class="search-form"id="search-form">
+                    <input type="search"name="city"id="city-name"placeholder="Enter city name"
+                    required class="form-input"/>
+                    <button type="submit"class="form-button">Search</button>
+                </form>
+              </div> 
+              
+              <div class="weather-data">
+                <h3>Paris</h3>
+                <!--<h3>
+                🌞18
+                <strong>°C</strong> 
+                <h3>
+                       -->
+                    <div class="weather-app-temperature-container">
+                        <div class=""id="weather-app-icon">
+                            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-cloud-day.png"
+                            alt="not loading"class="weather-app-icon">
+                        </div>
+                        <div class="weather-app-temperature"id="currenttemperaturevalue">12</div>
+                        <div class="weater hr-app-unit">°C</div>
+                    </div>
+              </div>
+              <div>
+                <p>
+                    <span id="currenttime">
+                        Tuesday
+                        14.40
+                        ,
+                    </span>
+                    <span id="weatherdescription">
+                        scattered clouds
+                    </span>
+                    <br/>
+                    Humidity:
+                    <span id="Humidity"class="Humidity">
+                        66
+                    </span>
+                    , Wind Speed:
+                    <span id="windspeed">
+                        4.3
+                    </span>
+                </p>
+              </div>
+            </main>
+            <footer>
+                <div>
+                    Coded by <a href="https://github.com/Immah"target="_blank">Immah Oyoo</a>
+                    and is on 
+                    <a href="https://github.com/Immah/Week7-Weather-Apl"
+                    target="_blank">Github</a>
+                    and hosted by 
+                    <a href="https://immahweatherapp.nelify.app/"target="_blank">Nelify.</a>
+                    <br>
+                    The design was done using 
+                    <a href="https://www.visual.com/"target="_blank">Visual</a>
+                </div>
+            </footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
